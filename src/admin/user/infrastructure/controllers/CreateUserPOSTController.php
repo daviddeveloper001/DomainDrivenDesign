@@ -12,14 +12,14 @@ final class CreateUserPOSTController extends Controller
 
     public function index(CreateUserRequest $request)
     {
-        $eloquentUserRespository = new EloquentUserRepository();
-        $createUserUseCase = new CreateUserUseCase($eloquentUserRespository);
+        $eloquentUserRepository = new EloquentUserRepository();
+        $createUserUseCase = new CreateUserUseCase($eloquentUserRepository);
 
         $createUserUseCase->execute(
-            $request->id(),
-            $request->name(),
-            $request->email(),
-            $request->password()
+            $request->input('id'),
+            $request->input('name'),
+            $request->input('email'),
+            $request->input('password')
         );
     }
 }

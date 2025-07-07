@@ -11,7 +11,7 @@ class UserName
         if (empty($name)) {
             throw new \InvalidArgumentException("User name cannot be empty.");
         }
-        if (strlen($name > 3 ))
+        if (strlen($name < 3 ))
         {
             throw new \InvalidArgumentException("User name must be at least 3 characters long.");
         }
