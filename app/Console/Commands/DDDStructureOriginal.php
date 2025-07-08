@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\File;
 
 // @author: Juanjo Ruiz (Github: jjruizdeveloper | youtube: @gogodev | discord: juanjo.ruiz)
 
-class DDDStructure extends Command
+class DDDStructureOriginal extends Command
 {
     /**
      * The name and signature of the console command.

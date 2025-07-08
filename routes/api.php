@@ -9,3 +9,5 @@ Route::get('/user', function (Request $request) {
 
 
 Route::prefix('admin/user')->group(base_path('src/admin/user/infrastructure/routes/api.php'));
+
+Route::prefix('Catalog_Product')->group(base_path('src/Catalog/Product/infrastructure/routes/api.php'));
